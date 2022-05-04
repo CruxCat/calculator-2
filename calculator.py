@@ -22,5 +22,10 @@ while True:
     if player_input == "q" or player_input == "Q":
         print("BYE")
         break
-    else 
-    
+    else:
+        operater = tokens[0]
+        num1 = float(tokens[1])
+        num2 = float(tokens[2])
+        if operater == "+":
+            print(add(num1,num2))
+        elif
