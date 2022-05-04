@@ -1,7 +1,7 @@
 """CLI application for a prefix-notation calculator."""
 
 from arithmetic import (add, subtract, multiply, divide, square, cube,
-                        power, mod, )
+                        power, mod,)
 
 
 #welcome statement
@@ -23,9 +23,21 @@ while True:
         print("BYE")
         break
     else:
-        operater = tokens[0]
-        num1 = float(tokens[1])
-        num2 = float(tokens[2])
-        if operater == "+":
-            print(add(num1,num2))
-        elif
+        if tokens[0] == "+":
+            print(add(float(tokens[1]),float(tokens[2])))
+        elif tokens[0] == "-":
+            print(subtract(float(tokens[1]),float(tokens[2])))
+        elif tokens[0] == "*":
+            print(multiply(float(tokens[1]),float(tokens[2])))
+        elif tokens[0] == "/":
+            print(divide(float(tokens[1]),float(tokens[2])))
+        elif tokens[0] == "square":
+            print(square(float(tokens[1])))
+        elif tokens[0] == "cube":
+            print(cube((float(tokens[1]))))
+        elif tokens[0] == "pow":
+            print(power(float(tokens[1]),float(tokens[2])))
+        elif tokens[0] == "%":
+            print(mod(float(tokens[1]),float(tokens[2])))
+        else:
+            print("Invalid entry. Try again.")
