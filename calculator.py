@@ -19,4 +19,8 @@ print("Welcome to the Calculator. Please enter your equation and 2 numbers. Enjo
 while True: 
     player_input = input("> ")
     tokens = player_input.split(" ")
+    if player_input == "q" or player_input == "Q":
+        print("BYE")
+        break
+    else 
     
